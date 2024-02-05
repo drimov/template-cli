@@ -5,6 +5,7 @@ extends:
   - eslint:recommended
   - plugin:@typescript-eslint/strict
   - prettier
+  - plugin:vitest/all
 parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaVersion: latest
@@ -13,5 +14,6 @@ plugins:
   - "@typescript-eslint"
 rules:
   "@typescript-eslint/no-unused-vars": error
+  vitest/prefer-expect-assertions: off
 ignorePatterns:
   - "dist/**"
